@@ -1,6 +1,7 @@
 name: Build LKM for KernelSU
 on:
   push:
+    workflow_dispatch:
     branches: ["main", "ci", "checkci"]
     paths:
       - ".github/workflows/build-lkm.yml"
